@@ -1,0 +1,75 @@
+CREATE VOLATILE SET TABLE AccessRightsAbbv
+(
+Description VARCHAR(50),
+AccessRight CHAR(2)
+
+)PRIMARY INDEX(AccessRight) ON COMMIT PRESERVE ROWS;
+
+INS AccessRightsAbbv('CHECKPOINT','CP');
+INS AccessRightsAbbv('CREATE AUTHORIZATION','CA');
+INS AccessRightsAbbv('CREATE MACRO','CM');
+INS AccessRightsAbbv('CREATE PROCEDURE','PC');
+INS AccessRightsAbbv('CREATE TABLE','CT');
+INS AccessRightsAbbv('CREATE TRIGGER','CG');
+INS AccessRightsAbbv('CREATE VIEW','CV');
+INS AccessRightsAbbv('DELETE','D');
+INS AccessRightsAbbv('DROP AUTHORIZATION','DA');
+INS AccessRightsAbbv('DROP FUNCTION ','DF');
+INS AccessRightsAbbv('DROP MACRO','DM');
+INS AccessRightsAbbv('DROP PROCEDURE','PD');
+INS AccessRightsAbbv('DROP TRIGGER','DG');
+INS AccessRightsAbbv('DROP VIEW','DV');
+INS AccessRightsAbbv('DUMP','DP');
+INS AccessRightsAbbv('INSERT','I');
+INS AccessRightsAbbv('RESTORE','RS');
+INS AccessRightsAbbv('SELECT','R');
+INS AccessRightsAbbv('UPDATE','U');
+INS AccessRightsAbbv('CREATE DATABASE','CD');
+INS AccessRightsAbbv('CREATE USER','CU');
+INS AccessRightsAbbv('DROP DATABASE','DD');
+INS AccessRightsAbbv('DROP USER','DU');
+INS AccessRightsAbbv('ALTER EXTERNAL PROCEDURE','AE');
+INS AccessRightsAbbv('ALTER FUNCTION','AF');
+INS AccessRightsAbbv('ALTER PROCEDURE','AP');
+INS AccessRightsAbbv('CREATE EXTERNAL PROCEDURE','CE');
+INS AccessRightsAbbv('CREATE FUNCTION','CF');
+INS AccessRightsAbbv('EXECUTE FUNCTION','EF');
+INS AccessRightsAbbv('EXECUTE PROCEDURE','PE');
+INS AccessRightsAbbv('EXECUTE','E');
+INS AccessRightsAbbv('DROP TABLE','DT');
+INS AccessRightsAbbv('INDEX','IX');
+INS AccessRightsAbbv('REFERENCES','RF');
+INS AccessRightsAbbv('ABORT SESSION','AS');
+INS AccessRightsAbbv('MONRESOURCE','MR');
+INS AccessRightsAbbv('MONSESSION','MS');
+INS AccessRightsAbbv('SETRESRATE','SR');
+INS AccessRightsAbbv('SETSESSRATE','SS');
+INS AccessRightsAbbv('CREATE PROFILE','CO');
+INS AccessRightsAbbv('CREATE ROLE','CR');
+INS AccessRightsAbbv('DROP PROFILE','DO');
+INS AccessRightsAbbv('DROP ROLE','DR');
+INS AccessRightsAbbv('REPLCONTROL','RO');
+INS AccessRightsAbbv('Show','SH');
+INS AccessRightsAbbv('Create GLOP','GC');
+INS AccessRightsAbbv('Drop GLOP','GD');
+INS AccessRightsAbbv('GLOP Member','GM');
+INS AccessRightsAbbv('Create Owner Procedure','OP');
+INS AccessRightsAbbv('OVERRIDE DUMP CONSTRAINT','OA');
+INS AccessRightsAbbv('OVERRIDE RESTORE CONSTRAINT','OR');
+INS AccessRightsAbbv('CREATE SERVER','CS');
+INS AccessRightsAbbv('CREATE ZONE','CZ');
+INS AccessRightsAbbv('DROP SERVER','DS');
+INS AccessRightsAbbv('DROP ZONE','DZ');
+INS AccessRightsAbbv('NONTEMPORAL','NT');
+INS AccessRightsAbbv('OVERRIDE DELETE POLICY','OD');
+INS AccessRightsAbbv('OVERRIDE INSERT POLICY','OI');
+INS AccessRightsAbbv('OVERRIDE SELECT POLICY','OS');
+INS AccessRightsAbbv('OVERRIDE UPDATE POLICY','OU');
+INS AccessRightsAbbv('SECURITY CONSTRAINT ASSIGNMENT (system wide)','SA');
+INS AccessRightsAbbv('SECURITY CONSTRAINT DEFINITION (system wide)','SD');
+INS AccessRightsAbbv('STATISTICS','ST');
+INS AccessRightsAbbv('CTCONTROL','TH');
+INS AccessRightsAbbv('UDT METHOD','UM');
+INS AccessRightsAbbv('UDT TYPE','UT');
+INS AccessRightsAbbv('UDT USAGE','UU');
+INS AccessRightsAbbv('ZONE OVERRIDE','ZO');
